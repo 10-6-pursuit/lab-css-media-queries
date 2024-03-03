@@ -36,7 +36,6 @@ header {
   color: #ececec;
   padding: 0.5rem 15%;
   text-align: center;
-
   display: grid;
   grid-template-columns: 250px 1fr;
 }
@@ -163,3 +162,48 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .splash {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer h4 {
+    border-bottom: none;
+  }
+
+  
+  footer ul {
+    list-style: none;
+  }
+}
