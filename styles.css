@@ -179,6 +179,10 @@ footer a:hover {
 }
 
 @media (width < 768px) {
+
+  .splash {
+    display: none;
+  }
   header {
     display: flex;
     flex-wrap: wrap;
