@@ -96,7 +96,7 @@ main {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 3rem;
+  gap: 50px 0px;
 }
 
 /* Articles */
