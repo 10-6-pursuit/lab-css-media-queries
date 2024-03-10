@@ -38,7 +38,7 @@ header {
   text-align: center;
 
   display: grid;
-  grid-template-columns: 250px repear(2, 1fr);
+  grid-template-columns: 250px 1fr;
 }
 
 header h1 {
@@ -76,7 +76,6 @@ nav a:hover {
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
-  display: none;
 }
 
 .splash h2 {
@@ -92,11 +91,11 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 90%;
+  width: 70%;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px 0px;
+  gap: 1rem 3rem;
 }
 
 /* Articles */
@@ -131,13 +130,14 @@ aside a:hover {
 footer {
   background: #040f16;
   color: #ececec;
-  padding: 25px;
-  text-align: center;
+  padding: 50px 15% 25px;
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 footer h4 {
+  border-bottom: 1px solid #de6b48;
   margin: 0;
   max-width: 250px;
   padding-bottom: 5px;
@@ -145,7 +145,7 @@ footer h4 {
 
 footer ul {
   color: #de6b48;
-  list-style: none;
+  list-style: square;
   padding-left: 1rem;
 }
 
@@ -163,3 +163,41 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (768px <= width <= 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  header {
+    grid-template-columns: 250px 2fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px 0px;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer li{
+    list-style: none;
+  }
+
+  footer h4{
+    border-bottom: none;
+  }
+}
