@@ -131,14 +131,13 @@ aside a:hover {
 footer {
   background: #040f16;
   color: #ececec;
-  padding: 50px 15% 25px;
-
+  padding: 25px;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
-  border-bottom: 1px solid #de6b48;
   margin: 0;
   max-width: 250px;
   padding-bottom: 5px;
@@ -146,7 +145,7 @@ footer h4 {
 
 footer ul {
   color: #de6b48;
-  list-style: square;
+  list-style: none;
   padding-left: 1rem;
 }
 
