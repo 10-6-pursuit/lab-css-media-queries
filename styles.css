@@ -176,6 +176,9 @@ footer a:hover {
   }
 }
 @media (max-width :768px){
+  .splash{
+    display: none;
+  }
   header{
     display: grid;
     grid-template-columns: 1fr
