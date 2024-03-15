@@ -171,16 +171,16 @@ footer a:hover {
     width: 90%;
   }
   footer {
-    columns: 2;
+    column-count: 2;
   }
 }
 
-@media (width < 768px) {
+@media (max-width: 768px) {
   header {
-    columns: 1;
+    column-count: 1;
   }
   main {
-    columns: 1;
+    column-count: 1;
     row-gap: 50px;
     column-gap: 0;
   }
@@ -188,6 +188,7 @@ footer a:hover {
     padding: 25px;
     text-align: center;
     border: none;
+    text-decoration: none;
   }
   footer ul {
     list-style: none;
