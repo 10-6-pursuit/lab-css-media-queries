@@ -163,3 +163,33 @@ footer a:hover {
 }
 
 /* Media queries */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    columns: 2;
+  }
+}
+
+@media (width < 768px) {
+  header {
+    columns: 1;
+  }
+  main {
+    columns: 1;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+    border: none;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
