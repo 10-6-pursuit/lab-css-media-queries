@@ -37,9 +37,11 @@ To complete the tests in this lab, you will need to overwrite some styles depend
 
 - [x] Change the `gap` on the `main` element so that it has a gap between each row of `50px`. The gap between columns should be `0`.
 
-- [ ] Update the `footer` element so it has a padding of `25px` all around.
-- [ ] Update the `footer` element so that all of the text inside of it is aligned to the center.
-- [ ] Update the `footer` unordered list elements so that none of them have a list-style.
-- [ ] Update the `footer` heading so that it no longer has a border along the bottom.
+- [x] Update the `footer` element so it has a padding of `25px` all around.
+
+- [x] Update the `footer` element so that all of the text inside of it is aligned to the center.
+
+- [x] Update the `footer` unordered list elements so that none of them have a list-style.
+- [x] Update the `footer` heading so that it no longer has a border along the bottom.
 
 ![Narrow view](./assets/narrow-view.png)
