@@ -176,11 +176,15 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  .splash {
+    display: none;
+  }
   header {
-    column-count: 1;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   main {
-    column-count: 1;
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;
     column-gap: 0;
   }
@@ -188,9 +192,12 @@ footer a:hover {
     padding: 25px;
     text-align: center;
     border: none;
-    text-decoration: none;
+    grid-template-columns: repeat(2, 1fr);
   }
   footer ul {
     list-style: none;
+  }
+  footer h4 {
+    border: none;
   }
 }
